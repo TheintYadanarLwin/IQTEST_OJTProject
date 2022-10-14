@@ -8,6 +8,8 @@ Nuxt-app using Vuex Store with Backend Laravel using Closure Table
 
 1.`git clone https://github.com/TheintYadanarLwin/IQTEST_OJTProject.git`
 
+2.`cd IQTEST_OJTProject`
+
 **Setup installation for Backend laravel**
 
 1.`cd backend`
