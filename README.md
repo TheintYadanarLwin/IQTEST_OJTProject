@@ -1,8 +1,8 @@
-#**Project Title**
-## IQTEST_OJTProject
+
+# IQTEST_OJTProject
 Nuxt-app using Vuex Store with Backend Laravel using Closure Table
 
-**Getting Started**
+## Getting Start
 
 **git clone this repo link in your folder**
 
