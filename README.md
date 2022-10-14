@@ -14,7 +14,10 @@ Nuxt-app using Vuex Store with Backend Laravel using Closure Table
 
 1.`cd backend`
 
-2.`composer install`
+2.`composer install` 
+
+if you have some error 
+ use `composer update`
 
 3.*connect your database and copy paste these two sentenses in .env file*
 
