@@ -14,7 +14,8 @@ Set up for Backend laravel
 
 2.`composer install`
 
-3.connect your database and copy paste these two sentenses in .env file// API
+3.connect your database and copy paste these two sentenses in .env file
+
 `SESSION_DOMAIN=localhost`
 `SANCTUM_STATEFUL_DOMAINS=localhost:3000`
 
@@ -28,7 +29,11 @@ Set up for Backend laravel
 `php artisan serve`
 
 Setup for frontend NUXTJS
+
 1.`cd frontend`
+
 2.`npm install` or `npm install --force`
+
 3.` npm run dev`
+
 Hope you Enjoy it!👍
