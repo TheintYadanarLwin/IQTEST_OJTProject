@@ -42,6 +42,30 @@ jobs:
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
-  say-hello-workflow:
+  version: 2.1
     jobs:
-      - say-hello
+   build-and-test:
+    working_directory: ~/frontend
+    docker:
+      - image: cimg/node:17.4.0
+    steps:
+      - checkout
+      - run:
+          name: Update NPM
+          command: "sudo npm install -g npm"
+      - restore_cache:
+          key: dependency-cache-{{ checksum "frontend/package-lock.json" }}
+      - run:
+          name: Install Dependencies
+          command: npm install
+      - save_cache:
+          key: dependency-cache-{{ checksum "frontend/package-lock.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Run test for the application
+          command: npm run test:unit
+workflows:
+  build-and-test:
+    jobs:
+      - build-and-test
